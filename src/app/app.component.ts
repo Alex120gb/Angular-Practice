@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-practice-app';
+  test = '';
+
+  sayhi(){
+    this.test = "hi";
+  };
+
+  resetParagraph() {
+    this.test = "";
+    this.title = "";
+  }
+
 }
