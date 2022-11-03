@@ -1,0 +1,15 @@
+<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
+<p>{{ allowNewServer }}</p>
+<app-server></app-server>
+<app-server></app-server>
+
+<div class="row col-sm-10">
+  <button class="btn btn-success col-sm-2" (click)="success()">Success!</button>
+  <button class="btn btn-danger col-sm-2 col-sm-offset-1" (click)="fail()">Fail!</button>
+</div>
+
+
+<div class="row">
+  <success-warning-alerts class="col-sm-12" [TrueOrFalse]="TrueOrFalse"></success-warning-alerts>
+</div>
+
